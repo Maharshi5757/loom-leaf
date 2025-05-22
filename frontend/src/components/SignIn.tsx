@@ -24,7 +24,7 @@ const SignIn: React.FC<SignInProps> = ({ open, onClose, onSwitchToSignUp }) => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
-  const { login, logout } = useAuth();
+  const { login } = useAuth();
 
   // Clear form when dialog opens
   useEffect(() => {
